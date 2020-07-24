@@ -181,11 +181,18 @@ public class ResourceCentre {
 	public static Chromebook inputChromebook() {	
 		Chromebook cb =null;
 		// write your code here
+		String tag = Helper.readString("Enter asset tag > ");
+		String description = Helper.readString("Enter description > ");
+		String OS = Helper.readString("Enter operation system > ");
+
+		cb= new Chromebook(tag, description, OS);
 		return cb;
 		
 	}	
 	public static void addChromebook(ArrayList<Chromebook> chromebookList, Chromebook cb) {
 		// write your code here
+		chromebookList.add(cb);
+		System.out.println("Camcorder added");
 	}
 	
 	//================================= Option 3 Loan =================================
