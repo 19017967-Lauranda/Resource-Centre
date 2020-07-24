@@ -61,6 +61,30 @@ public class Resource_Centre_Student {
 		assertEquals("Test Chromebook arraylist size is 2?", 2, chromebookList.size());
 		
 	}
+	@Test
+	//Leslie
+	public void loanChromebookTest(){
+		ResourceCentre.addChromebook(chromebookList, cb1);	
+		assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
+		
+		assertTrue("Test if that Chromebook is available?", chromebookList.get(0).getIsAvailable());
+		chromebookList.get(0).setIsAvailable(false);
+		chromebookList.get(0).setDueDate("12345");
+		assertFalse("Test if that Chromebook status is updated to not available?", chromebookList.get(0).getIsAvailable());
+		assertNotEquals("Test Chromebook due date is updated?", "", chromebookList.get(0).getDueDate());
+	}
+	@Test
+	//Leslie
+	public void loanCamcorderTest(){
+		ResourceCentre.addCamcorder(camcorderList, cc1);	
+		assertNotNull("Test if there is valid Camcorder arraylist to add to", camcorderList);
+		
+		assertTrue("Test if that Camcorder is available?", camcorderList.get(0).getIsAvailable());
+		camcorderList.get(0).setIsAvailable(false);
+		camcorderList.get(0).setDueDate("12345");
+		assertFalse("Test if that Camcorder status is updated to not available?", camcorderList.get(0).getIsAvailable());
+		assertNotEquals("Test Camcorder due date is updated?", "", camcorderList.get(0).getDueDate());
+	}
 	@After
 	//Lauranda
 	public void tearDown() throws Exception {
