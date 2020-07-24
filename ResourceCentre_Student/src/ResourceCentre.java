@@ -181,7 +181,7 @@ public class ResourceCentre {
 	public static Chromebook inputChromebook() {	
 		Chromebook cb =null;
 		// write your code here
-<<<<<<< HEAD
+
 		//Lauranda
 		String tag = Helper.readString("Enter asset tag > ");
 		String description = Helper.readString("Enter description > ");
@@ -189,26 +189,25 @@ public class ResourceCentre {
 
 
 	
-=======
 		String tag = Helper.readString("Enter asset tag > ");
 		String description = Helper.readString("Enter description > ");
 		String OS = Helper.readString("Enter operation system > ");
 
 		cb= new Chromebook(tag, description, OS);
 		return cb;
->>>>>>> branch 'master' of https://github.com/19017967-Lauranda/Resource-Centre.git
+		branch 'master' of https://github.com/19017967-Lauranda/Resource-Centre.git
 		
 	}	
 	public static void addChromebook(ArrayList<Chromebook> chromebookList, Chromebook cb) {
 		// write your code here
-<<<<<<< HEAD
+
 		//Lauranda
 		chromebookList.add(cb);
 		System.out.println("Chromebook added");
-=======
+
 		chromebookList.add(cb);
 		System.out.println("Camcorder added");
->>>>>>> branch 'master' of https://github.com/19017967-Lauranda/Resource-Centre.git
+		branch 'master' of https://github.com/19017967-Lauranda/Resource-Centre.git
 	}
 	
 	//================================= Option 3 Loan =================================
