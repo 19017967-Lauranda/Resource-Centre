@@ -173,11 +173,20 @@ public class ResourceCentre {
 	public static Chromebook inputChromebook() {	
 		Chromebook cb =null;
 		// write your code here
-		return cb;
+		//Lauranda
+		String tag = Helper.readString("Enter asset tag > ");
+		String description = Helper.readString("Enter description > ");
+		String OS = Helper.readString ("Enter OS > ");
+
+
+	
 		
 	}	
 	public static void addChromebook(ArrayList<Chromebook> chromebookList, Chromebook cb) {
 		// write your code here
+		//Lauranda
+		chromebookList.add(cb);
+		System.out.println("Chromebook added");
 	}
 	
 	//================================= Option 3 Loan =================================
